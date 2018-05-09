@@ -1,0 +1,33 @@
+Dubbo-G Framework 是基于Dubbo2.5.3 二次开发版本.
+## 主要贡献者
+    郝宁 haoning1@lenovo.com
+    袁博 yuanbo5@lenovo.com
+## 主要功能
+    Mock 功能扩展
+        增加 CircuitBreaker （熔断机制）
+        增加 降级策略（手动、自动）
+    增加高效序列化实现
+        Kryo
+        Fst
+    增加双协议支持
+        HTTP
+        TCP
+    支持注解方式 实现 HTTP 协议
+    修改Dubbo Bug
+        序列化/反序列化
+        负载均衡（轮询策略）
+        Netty 3.2.5 Pipeline 切换Decoder/Encoder Bug
+    升级Netty3.2.5 》》》》》 3.10.6
+    项目整理和瘦身
+        dubbo-rpc 模块整理
+            去除dubbo-rpc/dubbo-rpc-memcached
+            去除dubbo-rpc/dubbo-rpc-redis
+            去除dubbo-rpc/dubbo-rpc-thrift
+            去除dubbo-rpc/dubbo-rpc-webservice
+        dubbo-registry 模块整理
+            去除dubbo-registry/dubbo-registry-redis
+        dubbo-remoting 模块整理
+            去除dubbo-remoting/dubbo-remoting-grizzly
+            去除dubbo-remoting/dubbo-remoting-p2p
+        dubbo-container 模块整理
+            去除dubbo-container/dubbo-container-jetty
